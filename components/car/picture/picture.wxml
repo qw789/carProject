@@ -1,0 +1,10 @@
+<view class="picture {{isHide?'none':''}}">
+    <view class="list">
+        <image class="item {{index%2===0?'':'no-margin'}}"
+               wx:for="{{imgList}}"
+               wx:key="{{index}}"
+               src="{{item.bigimg}}"
+               data-src="{{item.bigimg}}"
+               bindtap="preview"></image>
+    </view>
+</view>

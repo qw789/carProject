@@ -1,0 +1,18 @@
+@import "../../../app.wxss";
+
+.searchbar-result{
+    margin-top: 0;
+    font-size: 14px;
+}
+.searchbar-result:before{
+    display: none;
+}
+.weui-cell{
+    padding: 12px 15px 12px 35px;
+}
+.weui-search-bar__cancel-btn{
+    color:rgb(254,116,0)!important;
+}
+.weui-search-bar__form{
+    width:30rpx;
+}

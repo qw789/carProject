@@ -1,0 +1,36 @@
+.container{
+    line-height:1;
+    padding-top:10rpx;
+}
+
+.content{
+    height:208rpx;
+    padding:0 30rpx;
+    background: white;
+    box-sizing: border-box;
+    border-bottom:2rpx solid #ececec;
+    font-size:34rpx;
+}
+.content .name{
+    padding:32rpx 0 34rpx;
+}
+.content .address{
+    line-height:40rpx;
+}
+.foot{
+    box-sizing: border-box;
+    height:104rpx;
+    background: white;
+    padding-right:50rpx;
+    font-size:30rpx;
+    color:#353535;
+}
+.foot .edit{
+    margin-right:20rpx;
+}
+.foot image{
+    display: block;
+    width:30rpx;
+    height:35rpx;
+    margin-right:9rpx;
+}

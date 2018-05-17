@@ -1,0 +1,24 @@
+<view class="container">
+    <view class="kong {{messageList.length==0?'':'none'}}">
+        <view class="box">
+            <image src="../../../images/kym_xx.png"></image>
+            <view>您还没有任何消息</view>
+        </view>
+    </view>
+    <view class="outter {{messageList.length==0?'none':''}}">
+        <view class="item system row-start"
+          wx:for="{{messageList}}"
+          wx:key="{{index}}">
+            <image class="left"
+                src="{{item.type==0?systemIcon:otherIcon}}"></image>
+            <view class="right">
+                <view class="top row-between">
+                    <view class="l">{{item.type==0?system:other}}</view>
+                    <view class="r">{{item.createDate}}</view>
+                </view>
+                <view class="bottom">{{item.message}}</view>
+            </view>
+        </view>
+    </view>
+    
+</view>

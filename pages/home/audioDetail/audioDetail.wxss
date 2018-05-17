@@ -1,0 +1,45 @@
+.container{
+    background: white;
+}
+.audio{
+    background: white;
+}
+.title{
+    font-size:50rpx;
+    line-height: 70rpx;
+    text-align: center;
+    margin:30rpx 0;
+    padding:0 50rpx;
+}
+#homeAudio{
+    display: block;
+    text-align: center;
+}
+.play{
+    font-size:26rpx;
+    color:#b2b2b2;
+    margin-top:20rpx;
+    margin-bottom:60rpx;
+}
+.play .m{
+    padding:0 15rpx;
+}
+.content{
+    color:#353535;
+    font-size:34rpx;
+    line-height:50rpx;
+    padding:0 30rpx;
+    padding-bottom:60rpx;
+}
+.share{
+    position: fixed!important;
+    right:20rpx!important;
+    bottom:20rpx;
+    width:50rpx;
+    height:50rpx;
+    background: none;
+    z-index:100;
+}
+.share::after{
+    border:0!important;
+}

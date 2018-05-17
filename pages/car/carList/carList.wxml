@@ -1,0 +1,26 @@
+<view class="car-list {{sort==1?'':'new'}}">
+    <view class="header {{sort==1?'':'hidden'}}">
+        <view class="item {{currentTab==index?'select':''}}"
+              wx:for="{{navList}}"
+              wx:key="{{index}}"
+              data-index="{{index}}"
+              bindtap="nav">{{item}}</view>
+    </view>
+    <view class="list">
+        <view class="item row-start"
+              wx:for="{{carList}}"
+              wx:key="{{index}}"
+              data-id="{{item.id}}"
+              bindtap="toDetail">
+            <view class="left">
+                <image src="{{item.logo}}"></image>
+            </view>
+            <view class="right">
+                <view class="top">{{item.name}}</view>
+                <view class="bottom">{{item.price}}</view>
+            </view>
+            <image class="to"
+                   src="../../../images/to.pic"></image>
+        </view>
+    </view>
+</view>

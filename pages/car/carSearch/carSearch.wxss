@@ -1,0 +1,26 @@
+.head{
+    box-sizing: border-box;
+    height:68rpx;
+    background: white;
+    padding-left:40rpx;
+}
+.head .content{
+    font-size:28rpx;
+    line-height:68rpx;
+}
+.head .num{
+    display: inline;
+    color:#ff7400;
+}
+.list{
+    background: white;
+}
+.list .item{
+    height:200rpx;
+    border-bottom:2rpx solid #f4f4f4;
+}
+.list .item .left image{
+    display: block;
+    width:210rpx;
+    height:138rpx;
+}

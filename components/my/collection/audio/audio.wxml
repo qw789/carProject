@@ -1,0 +1,28 @@
+<view class="{{hide?'none':''}}">
+<view class="con-item"
+      wx:for="{{homeList}}"
+      wx:key="{{index}}"
+      data-index="{{index}}"
+      data-id="{{item.id}}"
+      bindtap="toDetail">
+    <view class="row-start">
+        <view class="img">
+            <image src="{{item.poster}}"></image>
+        </view>
+        <view class="item-con">
+            <view class="til">{{item.title}}</view>
+            <view class="comment row-between">
+                <view class="left">评论 {{item.comments}}</view>
+                <view class="right">{{item.createDate}}</view>
+            </view>
+        </view>
+    </view>
+    
+</view>
+
+<view class="kong {{homeList.length==0?'':'none'}}">
+    <image src="../../../../images/kym_shc.png"></image>
+    <view>您还没有任何收藏</view>
+</view>
+
+</view>

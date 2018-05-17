@@ -1,0 +1,15 @@
+<view class="container">
+    
+    <textarea placeholder='提出您宝贵的意见'
+              placeholder-class='placeholder'
+              bindinput="getComment"
+              auto-focus="true">
+            <view class="num {{overNum?'red':''}}">{{currentNum}}/100</view>     
+    </textarea>
+    <view class="err {{isErr?'':'none'}}">*字数必须小于100字并不能为空</view>
+    <view class="btn">
+        <button class="yes"
+                type="primary"
+                bindtap="_postComment">提 交</button>
+    </view>  
+</view>

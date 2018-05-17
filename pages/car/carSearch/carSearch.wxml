@@ -1,0 +1,12 @@
+<view class="container">
+    <searchbar inputShowed="true"
+               bind:inputTyping="getQ"
+               bind:hideInput="back"></searchbar>
+    <view class="head {{allNum==0?'none':''}}">
+        <view class="content">共找到<view class="num">{{allNum}}</view>条相关数据</view>
+    </view>
+    <view class="list">
+        <car-item dataList="{{searchList}}"
+                  bind:toDetail="toDetail"></car-item>
+    </view>
+</view>

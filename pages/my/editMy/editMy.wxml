@@ -1,0 +1,48 @@
+<view class="container">
+    <view class="header row-between"
+          bindtap="selectAvatar">
+        <view class="left">头像</view>
+        <view class="right row-start">
+            <image class="avatar"
+                    src="{{avatar}}"
+                    mode="aspectFill"></image>
+            <image class="to"
+                   src="../../../images/icon_gd_r.png"></image>
+        </view>
+    </view>
+
+    <view class="detail">
+        <view class="item name row-between border">
+            <view class="left">昵称</view>
+            <view class="right {{isEditName?'none':''}}"
+                  bindtap="editName">{{nickname}}</view>
+            <input placeholder="请输入昵称"
+                    placeholder-class='placeholder'
+                    bindinput="getName"
+                    class="{{isEditName?'':'none'}}"
+                    bindblur="hideInput"></input>
+        </view>
+        <view class="item row-between">
+            <view class="left">手机</view>
+            <view class="right phone {{phone?'none':''}}"
+                    bindtap="toBind">绑定</view>
+            <view class="right {{phone?'':'none'}}">{{phone}}</view>
+        </view>
+    </view>
+
+    <view class="information">
+        <view class="head">个人简介</view>
+        <view class="introNum {{introErr?'red':''}}">{{introNum}}/60</view>
+        <textarea placeholder='暂无个人简介'
+                  placeholder-class='placeholder-text'
+                  bindinput="getIntroduction"
+                  bindblur='introBlur'
+                  value="{{user.remark}}"
+                  cursor-spacing="100"></textarea>
+    </view>
+
+    <view class="btn">
+        <view class="save-err {{isErr?'':'none'}}">{{saveErr}}</view>
+        <button bindtap="save">保存修改</button>
+    </view>
+</view>

@@ -1,0 +1,8 @@
+{
+    "usingComponents":{
+        "navbar":"../../../components/base/navbar/navbar",
+        "detail":"../../../components/car/detail/detail",
+        "picture": "../../../components/car/picture/picture",
+        "parameter": "../../../components/car/parameter/parameter"
+    }
+}

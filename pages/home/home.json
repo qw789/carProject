@@ -1,0 +1,7 @@
+{
+  "usingComponents":{
+    "information":"/components/information/information",
+    "home-video":"/components/video/video",
+    "home-audio":"/components/audio/audio"
+  }
+}

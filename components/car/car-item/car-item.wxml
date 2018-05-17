@@ -1,0 +1,16 @@
+<view class="item row-start"
+        wx:for="{{dataList}}"
+        wx:key="{{index}}"
+        data-id="{{item.id}}"
+        bindtap="toDetail">
+        <view class="left">
+            <image src="{{item.logo}}"
+                   mode="aspectFill"></image>
+        </view>
+        <view class="right">
+            <view class="top">{{item.name}}</view>
+            <view class="bottom">{{item.price}}</view>
+        </view>
+        <image class="to"
+                src="../../../images/to.pic"></image>
+</view>

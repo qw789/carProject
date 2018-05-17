@@ -1,0 +1,17 @@
+<view class="container">
+    <navbar navList="{{navList}}"
+            bind:nav="changeTab"></navbar>
+    <car hide="{{carHide}}"
+             homeList="{{carList}}"
+             bind:toDetail="toCarDetail"></car>
+    <article hide="{{articleHide}}"
+             homeList="{{articleList}}"
+             bind:toDetail="toArticleDetail"
+             ></article>
+    <_audio hide="{{audioHide}}"
+             homeList="{{audioList}}"
+             bind:toDetail="toAudioDetail"></_audio>
+    <_video hide="{{videoHide}}"
+             homeList="{{videoList}}"
+             bind:toDetail="toVideoDetail"></_video>       
+</view>

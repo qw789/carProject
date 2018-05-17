@@ -1,0 +1,112 @@
+@import "../../../app.wxss";
+
+.banner{
+    height:420rpx;
+    position: relative;
+}
+.banner image{
+    display: block;
+    width:100%;
+    height:100%;
+}
+.banner .mask{
+    position: absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:72rpx;
+    background-image:linear-gradient(to top,rgba(0,0,0,.3),rgba(255,255,255,.3));
+    z-index:99;
+}
+
+.title{
+    background: white;
+    box-sizing: border-box;
+    height:260rpx;
+    padding:24rpx 30rpx 38rpx;
+    padding-right:0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom:20rpx;
+    overflow: hidden;
+}
+.title .l{
+    width:1060rpx;
+}
+.title .r{
+    width:390rpx;
+    height:148rpx;
+    margin-top:60rpx;
+    border-left:2rpx solid #f4f4f4;
+    text-align: center;
+}
+.title .r .center{
+    width:100rpx;
+    margin:0 auto;
+    margin-top:24rpx;
+    font-size:26rpx;
+    color:#888;
+}
+.title .r image{
+    display: block;
+    width:46rpx;
+    height:46rpx;
+    margin:0 auto;
+    margin-bottom:18rpx;
+}
+.title .til{
+    
+}
+.title .til .voice{
+    display: block;
+    width:40rpx;
+    height:34rpx;
+}
+.title .til .left{
+    font-size:40rpx;
+    margin-right:22rpx;
+}
+.title .til .right{
+    background: #1065c8;
+    font-size:20rpx;
+    color:white;
+    padding:5rpx 20rpx;
+    border-radius:8rpx;
+    margin-right:22rpx;
+}
+.title .price{
+    font-size:34rpx;
+    color:#ff7400;
+    margin-bottom:6rpx;
+}
+.title .params .item{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.title .params .item .left{
+    margin-right:30rpx;
+}
+.title .params{
+    font-size:30rpx;
+    color:#888;
+}
+
+.content{
+    background: white;
+    padding:32rpx 30rpx;
+}
+.content .til{
+    margin-bottom:32rpx;
+}
+.content image{
+    display: block;
+    width:40rpx;
+    height:34rpx;
+}
+.content .til .right{
+    font-size:40rpx;
+}

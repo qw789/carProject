@@ -1,0 +1,30 @@
+@import "../../../app.wxss";
+
+.header{
+    box-sizing: border-box;
+    height:80rpx;
+    line-height: 80rpx;
+    font-size:32rpx;
+    text-align: center;
+    border-bottom:2rpx solid #f4f4f4;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    z-index:100;
+}
+.header>view{
+    flex-grow: 1;
+    box-sizing: border-box;
+    height:80rpx;
+    line-height:80rpx;
+}
+.header .select{
+    color: #ff7400;
+    border-bottom:5rpx solid #ff7400;
+}

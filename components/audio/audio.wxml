@@ -1,0 +1,63 @@
+<view class=" {{isHide?'none':''}}">
+
+<view class="banner">
+    <swiper indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}" 
+            interval="{{interval}}" 
+            duration="{{duration}}"
+            indicator-color="rgba(255,255,255,.4)"
+            indicator-active-color="#ff7400">
+      <block wx:for="{{bannerList}}"
+             wx:key="{{index}}">
+        <swiper-item>
+          <image src="{{item.imgUrl}}" 
+                class="slide-image" 
+                width="355" 
+                height="150"
+                data-id="{{item.id}}
+                data-type="{{item.resourceType}}
+                bindtap="toDetail"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="tag">
+    <view class="tag-item {{currentTag==index?'click':''}}"
+            wx:for="{{tagList}}"
+            wx:key="{{index}}"
+            data-index="{{index}}"
+            data-id="{{item.id}}"
+            bindtap="currentTag">{{item.name}}</view>
+</view>
+
+<view class="con-item"
+      wx:for="{{homeList}}"
+      wx:key="{{index}}"
+      data-index="{{index}}"
+      data-type="{{item.type}}"
+      data-resourceType="{{item.resourceType}}"
+      data-id="{{item.id}}"
+      bindtap="toDetail">
+    <view class="row-start">
+        <view class="img">
+            <image src="{{item.covers[0]}}"
+                    mode="aspectFill"></image>
+        </view>
+        <view class="item-con">
+            <view class="til">{{item.title}}</view>
+            <view class="comment row-between">
+                <view class="left">评论 {{item.comments}}</view>
+                <view class="right">{{item.createDate}}</view>
+            </view>
+        </view>
+    </view>
+    
+</view>
+
+<view class="con">
+  <slot name="tag"></slot>
+  <slot name="ul"></slot>
+</view>
+
+</view>

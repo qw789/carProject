@@ -1,0 +1,28 @@
+<view class="answer {{hide?'none':''}}">
+    <view class="item"
+          wx:for="{{list}}"
+          wx:key="{{index}}">
+        <view class="q row-start">
+            <image class="left"
+                src="../../../images/q.png"></image>
+            <view class="right">
+                <view class="top {{!item.questionerName?'relative-q':''}}">{{item.question}}</view>
+                <view class="bottom row-between">
+                    <view class="l">{{item.questionerName}}</view>
+                    <view class="r">{{item.questionDate}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="a row-start {{!item.answer?'none':''}}">
+            <image class="left"
+                src="../../../images/a.png"></image>
+            <view class="right">
+                <view class="top">{{item.answer}}</view>
+                <view class="bottom row-between">
+                    <view class="l">{{item.answerName}}</view>
+                    <view class="r">{{item.answerDate}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,26 @@
+<view class="list {{hide?'none':''}}">
+
+<view class="kong {{homeList.length==0?'':'none'}}">
+    <image src="../../../../images/kym_shc.png"></image>
+    <view>您还没有任何收藏</view>
+</view>
+
+    <view class="item row-start"
+          wx:for="{{homeList}}"
+          wx:key="{{index}}"
+          data-id="{{item.id}}"
+          bindtap="toDetail">
+        <view class="left">
+            <image src="{{item.logo}}"></image>
+        </view>
+        <view class="right">
+            <view class="top">{{item.name}}</view>
+            <view class="bottom">{{item.price}}</view>
+        </view>
+        <image class="to"
+                src="../../../../images/to.pic"></image>
+    </view>
+</view>
+
+
+

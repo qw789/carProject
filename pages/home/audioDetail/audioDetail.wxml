@@ -1,0 +1,26 @@
+<view class="container"
+      scroll-y="true">
+    <view class="audio">
+        <view class="title">{{detail.title}}</view>
+        <audio id="homeAudio"
+            poster="{{detail.poster}}" 
+            name="汽车立体声" 
+            author="{{detail.author}}" 
+            src="{{detail.src}}" 
+            controls></audio>
+        <view class="play row-center">
+            <view class="l">汽车保养</view>
+            <view class="m">|</view>
+            <view class="r">{{detail.createDate}}</view>
+        </view>
+        <view class="content">
+        {{detail.content}}</view>
+    </view>
+    <comment commentList="{{commentList}}"
+             comments="{{comments}}"
+             isCollection="{{isCollection}}"
+             bind:getComment="getInput"
+             bind:collection="collection"></comment>
+    <button class="share" open-type='share'>   </button>
+
+</view>

@@ -1,0 +1,127 @@
+.container{
+    min-height:100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.hidden{
+      overflow: hidden!important; 
+     height:100%!important; 
+}
+.header{
+    height:80rpx;
+    line-height:80rpx;
+    padding:0 30rpx;
+    color:#888;
+    font-size:26rpx;
+}
+.header .more{
+    float:right;
+    font-size:26rpx;
+    color:#438cca;
+}
+.brand{
+    background: white;
+    box-sizing: border-box;
+    height:378rpx;
+    margin-bottom:20rpx;
+}
+.brand .content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+.brand .content .item{
+    box-sizing: border-box;
+    width:150rpx;
+    height:120rpx;
+    margin-bottom:28rpx;
+    overflow: hidden;
+}
+.brand .content .item .top{
+    width:80rpx;
+    height:80rpx;
+    margin:0 auto;
+}
+.brand .content .item .top image{
+    display: block;
+    width:100%;
+    height:100%;
+}
+.brand .content .item .bottom{
+    font-size:30rpx;
+    text-align: center;
+}
+
+.type{
+    background: white;
+    box-sizing: border-box;
+    height:304rpx;
+    margin-bottom:20rpx;
+}
+.type .content{
+    padding:0 30rpx;
+}
+.type .item .top{
+    width:210rpx;
+    height:158rpx;
+    margin:0 auto;
+}
+.type .item .top image{
+    display: block;
+    width:100%;
+    height:100%;
+}
+.type .item .bottom{
+    font-size:30rpx;
+    text-align: center;
+}
+.new{
+    margin-bottom:0;
+}
+
+.brand-list{
+    background: white;
+}
+.brand-list .head{
+    height:50rpx;
+    background: #f4f4f4;
+    line-height:50rpx;
+    font-size:26rpx;
+    color:#888;
+    padding:0 30rpx;
+}
+.brand-list .list{
+    padding-left:30rpx;
+    overflow: hidden;
+}
+.brand-list .list .item{
+    box-sizing: border-box;
+    height:100rpx;
+    line-height:100rpx;
+    border-bottom:2rpx solid #f4f4f4;
+    overflow: hidden;
+}
+.brand-list .list .item .left{
+    box-sizing: border-box; 
+    width:100rpx;
+    height:100rpx;
+    position: relative;
+    margin-right:25rpx;
+    overflow: hidden;
+}
+.brand-list .list .item .left image{
+    display: block; 
+    width:80rpx;
+    height:80rpx;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+}
+.brand-list .list .item .right{
+    font-size:30rpx;
+    overflow: hidden;
+}

@@ -1,0 +1,18 @@
+<view class="container">
+    <navbar navList="{{navList}}"
+            bind:nav="nav"></navbar>
+    <answer hide="{{myHide}}"
+            list="{{myList}}"></answer>
+    <answer hide="{{allHide}}"
+            list="{{allList}}"></answer>
+    <view class="fixed-bottom row-start">
+        <input placeholder='问些什么...'
+               placeholder-class='placeholder'
+               bindinput='getQuestion'
+               value="{{questionValue}}"
+               disabled='false'
+               bindtap="toWen"></input>
+        <view class="btn" 
+              bindtap="_postQuestion">提问</view>
+    </view>
+</view>

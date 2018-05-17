@@ -1,0 +1,101 @@
+@import "../../app.wxss";
+
+.none{
+  display: none;
+}
+.banner{
+  height:420rpx;
+}
+.banner swiper{
+    height:100%;
+}
+.banner image{
+  width:100%;
+  height:100%;
+}
+.tag{
+    box-sizing: border-box;
+    padding:0 30rpx;
+    height:180rpx;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content:center;
+    background: white;
+    border-bottom:2rpx solid rgb(244,244,244);
+    margin-bottom:8rpx;
+}
+.tag .tag-item{
+    box-sizing: border-box;
+    margin:10rpx 0;
+    width:150rpx;
+    height:60rpx;
+    line-height:60rpx;
+    background: white;
+    color:#888;
+    border:2rpx solid rgb(199,199,199);
+    border-radius:10rpx;
+    overflow: hidden;
+    text-align: center;
+    font-size:26rpx;
+}
+.tag .click{
+    color:#ff7400;
+    border:2rpx solid #ff7400;
+}
+.con-item{
+    box-sizing: border-box;
+    height:216rpx;
+    padding:30rpx;
+    border-bottom:2rpx solid rgb(244,244,244);
+    background: white;
+    overflow: hidden;
+}
+.con-item-imgs{
+    box-sizing: border-box;
+    height:300rpx;
+    padding:20rpx 30rpx;
+    border-bottom:2rpx solid rgb(244,244,244);
+    background: white;
+}
+.con-item-imgs .imgs-til{
+    height:54rpx!important;
+    line-height:32rpx!important;
+}
+.con-item-imgs .imgs-comment{
+    margin-top:10rpx;
+}
+.con-item .img{
+    /* box-sizing: border-box; */
+    margin-right:30rpx; 
+    
+}
+.con-item .img image{
+    display: block;
+    width:210rpx;
+    height:156rpx;
+}
+.con-item .imgs image{
+    display: block;
+    width:210rpx;
+    height:158rpx;
+}
+.con-item .item-con{
+    box-sizing: border-box;
+    height:156rpx;
+    display:flex;
+    flex: 1;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+.con-item .til{
+    font-size:34rpx;
+    line-height:42rpx;
+    height:84rpx;
+    overflow: hidden;
+}
+.con-item .comment{
+    color:rgb(178,178,178);
+    font-size:26rpx;
+}

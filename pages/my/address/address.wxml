@@ -1,0 +1,18 @@
+<view class="container">
+    <view class="box">
+        <view class="content">
+            <view class="name row-between">
+                <view class="left">{{name}}</view>
+                <view class="right">{{phone}}</view>
+            </view>
+            <view class="address">{{address}}</view>
+        </view>
+        <view class="foot row-end">
+            <image src="../../../images/icon_bj.png"></image>
+            <view class="edit"
+                  bindtap="toEdit">编辑</view>
+            <image src="../../../images/icon_shch.png"></image>
+            <view>删除</view>
+        </view>
+    </view>
+</view>

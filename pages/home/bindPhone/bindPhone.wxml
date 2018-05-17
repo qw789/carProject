@@ -1,0 +1,26 @@
+<view class="container">
+    <view class="header">请填写您个人使用的手机号</view>
+    <view class="content">
+        <view class="item border row-start">
+            <view class="left">手机号</view>
+            <input class="right"
+                   placeholder='请输入手机号'
+                   placeholder-class='placeholder'
+                   bindinput="getPhone"></input>
+        </view>
+        <view class="item row-start">
+            <view class="left">验证码</view>
+            <input class="right"
+                   placeholder='请输入验证码'
+                   placeholder-class='placeholder'
+                   bindinput="getyzm"></input>
+            <view class="yzm {{canYZM?'blue':''}}"
+                  bindtap="_getYZM">{{yzmTime}}</view>
+        </view>
+    </view>
+
+    <view class="btn">
+        <button class="no-confirm {{confirm?'confirm':''}}"
+            bindtap="_postPhone">确 定</button>
+    </view> 
+</view>

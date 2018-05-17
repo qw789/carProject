@@ -1,0 +1,39 @@
+@import "../audioDetail/audioDetail.wxss";
+.container{
+    position: relative;
+}
+.information{
+    background: white;
+    height:auto;
+}
+.title{
+    margin-bottom:0rpx;
+}
+.content{
+    
+    padding:0 30rpx;
+    padding-bottom:40rpx;
+    box-sizing: border-box;
+}
+.wxParse-p{
+    color:#353535;
+    font-size:34rpx;
+    line-height:50rpx; 
+}
+
+.content image{
+    padding:20rpx 0;
+    width:690rpx;
+}
+.share{
+    position: fixed!important;
+    right:20rpx!important;
+    bottom:20rpx;
+    width:50rpx;
+    height:50rpx;
+    background: none;
+    z-index:100;
+}
+.share::after{
+    border:0!important;
+}

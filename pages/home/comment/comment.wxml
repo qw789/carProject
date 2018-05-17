@@ -1,0 +1,15 @@
+<view class="container">
+    
+    <textarea placeholder='评论'
+              placeholder-class='placeholder'
+              bindinput="getComment"
+              auto-focus="true">
+            <view class="num {{overNum?'red':''}}">{{currentNum}}/60</view>     
+    </textarea>
+    <view class="err {{isErr?'':'none'}}">*评论字数必须小于60字并不能为空</view>
+    <view class="btn">
+        <button class="yes"
+                type="primary"
+                bindtap="_postComment">提 交</button>
+    </view>  
+</view>

@@ -1,0 +1,37 @@
+<view class="mask {{showSide?'':'none'}}"
+      bindtap="hideSide">
+</view>
+
+<view class="sidebar"
+      
+      animation="{{animationData}}"
+      catchtap='cancelBubble'>
+      <scroll-view scroll-y
+                   class="scroll"
+                   id="sidebar">
+        <block wx:for="{{dataList}}"
+               wx:key="{{index}}">
+            <view class="header">{{item.name}}</view>
+            <view class="item row-start"
+                    wx:for="{{item.series}}"
+                    wx:key="{{index}}"
+                    wx:for-item="brand"
+                    data-id="{{brand.id}}"
+                    bindtap="toDetail">
+                    <view class="left">
+                        <image src="{{brand.logo}}"
+                            ></image>
+                    </view>
+                    <view class="right">
+                        <view class="top">{{brand.name}}</view>
+                        <view class="bottom">{{brand.price}}</view>
+                    </view>
+                    <image class="to"
+                        src="../../../images/to.pic"></image>
+            </view>
+        </block>   
+      </scroll-view>       
+</view>
+
+
+

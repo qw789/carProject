@@ -1,0 +1,26 @@
+.container{
+
+    box-sizing: border-box;
+}
+.tab{
+  box-sizing: border-box;
+  height:80rpx;
+  width:100%;
+  background: white; 
+  z-index:1; 
+  border-bottom:2rpx solid rgb(244,244,244);
+}
+.content{
+    height:100%;
+}
+.tab>view{
+  box-sizing: border-box;
+  flex-grow: 1;
+  height:80rpx;
+  line-height:80rpx;
+  text-align: center;
+  font-size:32rpx;
+}
+.select{
+  border-bottom:6rpx solid #ff7400; 
+}

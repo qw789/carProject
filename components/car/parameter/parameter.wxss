@@ -1,0 +1,55 @@
+@import "../../../app.wxss";
+
+.header{
+    box-sizing: border-box;
+    height:80rpx;
+    background: #ececec;
+    padding:0 30rpx;
+    color:#888;
+    font-size:30rpx;
+}
+.header .right{
+    width:290rpx;
+}
+.header image{
+    display: block;
+    width:14rpx;
+    height:14rpx;
+    margin-right:8rpx;
+}
+.header .line{
+    display: block;
+    width:14rpx;
+    height:4rpx;
+}
+.list image{
+    display: block;
+    width:14rpx;
+    height:14rpx;
+}
+.list .item{
+    border-bottom:2rpx solid #ececec;
+    height:auto;
+    display: table;
+}
+.list .item .left{
+    background: #f4f4f4;
+    color:#6d6d6d;
+    font-size:30rpx;
+    line-height:40rpx;
+    box-sizing: border-box;
+    width:286rpx;
+    padding:38rpx 30rpx;
+    display: table-cell;
+    vertical-align: middle;
+}
+.list .item .right{
+    display: table-cell;
+    vertical-align: middle;
+    flex: 1;
+    width:464rpx;
+    font-size:30rpx;
+    line-height:40rpx;
+    padding:38rpx 70rpx;
+    color:#353535;
+}

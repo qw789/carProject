@@ -1,0 +1,63 @@
+.container{
+    box-sizing: border-box;
+    background: white;
+    line-height: 1;
+    border-top:3rpx solid #ececec;
+    height:100%;
+}
+.bottom200{
+    padding-bottom:200rpx;
+}
+.list{
+    padding-left:30rpx;
+    background: white;
+}
+.item{
+    border-bottom:2rpx solid #ececec;
+    height:88rpx;
+    box-sizing: border-box;
+    font-size:36rpx;
+}
+.item image{
+    display: block;
+    width:46rpx;
+    height: 46rpx;
+    margin-right: 20rpx;
+}
+.bottom{
+    position: fixed;
+    padding:0 30rpx;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    box-sizing: border-box;
+    background: white;
+}
+.bottom .cancel{
+    margin-bottom:60rpx;
+}
+.bottom .delete,.edit{
+    margin-bottom: 40rpx;
+}
+.bottom .edit{
+    background: #ff7400;
+    color:white;
+    border: none;
+}
+.kong{
+    width:100%;
+    height:100%;
+    background: rgb(244,244,244);
+    position: relative;
+}
+.kong .box{
+    width:300rpx;
+    height:500rpx;
+    text-align: center;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+}

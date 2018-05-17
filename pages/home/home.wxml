@@ -1,0 +1,42 @@
+<view class="container"
+      scroll-y="true">
+  <view class="tab row-between">
+    <view class="imformation {{currentTab==0?'select':''}}"
+          data-index="0"
+          bindtap="changeTab">音频</view>
+    <view class="audio {{currentTab==1?'select':''}}"
+          data-index="1"
+          bindtap="changeTab">资讯</view>
+    <view class="video {{currentTab==2?'select':''}}"
+          data-index="2"
+          bindtap="changeTab">视频</view>
+  </view>
+
+  <view class="content">
+    <information isHide="{{isInfo}}"
+                 tagList="{{articleCategory}}"
+                 bannerList="{{infoBanner}}"
+                 homeList="{{articleList}}"
+                 bind:toDetail="toInformationDetail"
+                 bind:currentTag="currentArticleTag">
+    </information> 
+
+    <home-audio isHide="{{isAudio}}"
+                tagList="{{audioCategory}}"
+                bannerList="{{audioBanner}}"
+                homeList="{{audioList}}"
+                bind:toDetail="toAudioDetail"
+                bind:currentTag="currentTag"
+                bind:currentTag="currentAudioTag">
+    </home-audio>
+
+    <home-video isHide="{{isVideo}}"
+                tagList="{{vCategory}}"
+                tagsList="{{videoCategory}}"
+                videoList="{{videoList}}"
+                bind:toDetail="toVideoDetail"
+                bind:currentTag="currentVideoTag"
+                bind:filter="videofilter"
+                bind:filters="videofilter"></home-video>
+  </view>
+</view>

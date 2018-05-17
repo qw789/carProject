@@ -1,0 +1,135 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.7.2",
+	"appid": "wxb57f3b5cefc4c8cf",
+	"projectname": "carProject",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "audioDetail",
+					"pathName": "pages/home/audioDetail/audioDetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "videoDetail",
+					"pathName": "pages/home/videoDetail/videoDetail",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "informationDetail",
+					"pathName": "pages/home/informationDetail/informationDetail",
+					"query": "id=4"
+				},
+				{
+					"id": -1,
+					"name": "car",
+					"pathName": "pages/car/car",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "carList",
+					"pathName": "pages/car/carList/carList",
+					"query": "name=热门车型"
+				},
+				{
+					"id": 5,
+					"name": "carDetail",
+					"pathName": "pages/car/carDetail/carDetail",
+					"query": "id=25379"
+				},
+				{
+					"id": -1,
+					"name": "my",
+					"pathName": "pages/my/my",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "editMy",
+					"pathName": "pages/my/editMy/editMy",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "collection",
+					"pathName": "pages/my/collection/collection",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "address",
+					"pathName": "pages/my/address/address",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "answer",
+					"pathName": "pages/my/answer/answer",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "message",
+					"pathName": "pages/my/message/message",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "history",
+					"pathName": "pages/my/history/history",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "feedback",
+					"pathName": "pages/my/feedback/feedback",
+					"query": ""
+				},
+				{
+					"id": 14,
+					"name": "carsearch",
+					"pathName": "pages/car/carSearch/carSearch",
+					"query": "id=25379"
+				},
+				{
+					"id": -1,
+					"name": "bindPhone",
+					"pathName": "pages/home/bindPhone/bindPhone",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "comment",
+					"pathName": "pages/home/comment/comment",
+					"query": ""
+				}
+			]
+		}
+	}
+}

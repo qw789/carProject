@@ -1,0 +1,72 @@
+.car-list{
+    padding-top:80rpx;
+}
+.new{
+    padding-top:0;
+}
+.hidden{
+    display: none!important;
+}
+.header{
+    box-sizing: border-box;
+    height:80rpx;
+    line-height: 80rpx;
+    font-size:32rpx;
+    text-align: center;
+    border-bottom:2rpx solid #f4f4f4;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    position: fixed;
+    left:0;
+    top:0;
+    background: white;
+}
+.header>view{
+    flex-grow: 1;
+    box-sizing: border-box;
+    height:80rpx;
+    line-height:80rpx;
+}
+.header .select{
+    color: #ff7400;
+    border-bottom:4rpx solid #ff7400;
+}
+.list{
+    padding-left:40rpx;
+}
+.list .item{
+    box-sizing: border-box;
+    height:242rpx;
+    border-bottom:2rpx solid #f4f4f4;
+}
+.list .item .left{
+    box-sizing: border-box;
+    width:210rpx;
+    height:100%;
+    padding:42rpx 0;
+    margin-right:25rpx;
+}
+.list .item .left image{
+    display: block;
+    width:100%;
+    height:100%;
+}
+.list .item .right{
+    width:413rpx;
+}
+ .list .item .right .top{
+    font-size:36rpx;
+    margin-bottom:10rpx;
+}
+.list .item .right .bottom{
+    font-size:34rpx;
+    color:#ff7400;
+}
+.list .item .to{
+    display: block;
+    width:10rpx;
+    height:22rpx;
+}

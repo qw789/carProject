@@ -1,0 +1,27 @@
+<scroll-view class="container {{commentList.length==1?'one-comment':''}}">
+    <view class="home-video">
+        <video id="home-video" src="{{detail.src}}" controls
+               poster="{{item.poster}}"></video>
+    </view>
+        
+    <scroll-view class="scroll" scroll-y='true'>
+
+    <view class="video">
+        <view class="title">{{detail.title}}</view>
+        <view class="play row-center">
+            <view class="l">{{detail.author}}</view>
+            <view class="m">|</view>
+            <view class="r">播放{{detail.views}}</view>
+        </view>
+        <view class="content">{{detail.content}}
+        </view>
+    </view>
+    <comment commentList="{{commentList}}"
+             comments="{{comments}}"
+             isCollection="{{isCollection}}"
+             bind:getComment="getInput"
+             bind:collection="collection"></comment> 
+    <button class="share" open-type='share'>   </button>
+
+    </scroll-view>
+</scroll-view>

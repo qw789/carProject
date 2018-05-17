@@ -1,0 +1,115 @@
+@import "../../../../app.wxss";
+
+.home-video{
+    height:100%;
+}
+.none{
+    display: none!important;
+}
+.btn-select{
+    border:2rpx solid rgb(253,116,0)!important;
+    color:rgb(253,116,0)!important;
+}
+.tags{
+    box-sizing: border-box;
+    height:100rpx;
+    padding:20rpx 26rpx;
+    background: white;
+    border-bottom:2rpx solid rgb(244,244,244);
+    position:relative;
+    z-index:70;
+}
+.btn{
+    box-sizing: border-box;
+    width:150rpx;
+    height:60rpx;
+    border-radius:10rpx;
+    border:1rpx solid rgb(199,199,199);
+    font-size:26rpx;
+    text-align: center;
+    line-height:60rpx;
+    color:#888;
+}
+.not-expand-btn{
+    margin-right:15rpx;
+}
+.expand-btn{
+    margin:10rpx 0;
+    margin-right:30rpx;
+}
+.tags .not-expand{
+    width:655rpx;
+}
+.expand{
+    box-sizing: border-box;
+    padding:10rpx 26rpx;
+    padding-right:0;
+    position: relative;
+    z-index:70;
+    background: white;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+.tags .all-tag{
+    width:646rpx;
+    text-align: center;
+    line-height:100rpx;
+    color:#888;
+    font-size:32rpx;
+}
+.mask{
+    height:100%;
+    width:100%;
+    background: red;
+    box-sizing: border-box;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index:50;
+}
+
+.video-item{
+    box-sizing: border-box;
+    height:auto;
+    margin-bottom:10rpx;
+    background: white;
+}
+.video-item video{
+    width:100%;
+    height:420rpx;
+}
+.video-item .con{
+    box-sizing: border-box;
+    padding:30rpx;
+    padding-top:10rpx;
+    height:auto;
+}
+.video-item .til{
+    font-size:34rpx;
+    line-height:40rpx;
+    margin-bottom:20rpx;
+}
+.video-item .comment{
+    font-size:26rpx;
+    color:rgb(178,178,178);
+}
+.video-item .comment .left{
+    margin-right:60rpx;
+}
+.video-item .comment .l{
+    margin-right:10rpx;
+}
+.video-item .comment .right{
+    
+}
+.video-item .comment .l{
+    float:left;
+}
+.video-item .comment .r{
+    float:left;
+}
+.video-item .time{
+    float:right;
+}

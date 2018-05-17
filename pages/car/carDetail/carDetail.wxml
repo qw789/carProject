@@ -1,0 +1,12 @@
+<view class="car-detail">
+    <navbar navList="{{navList}}"
+            bind:nav="nav"></navbar>
+    <detail isHide="{{detailHide}}"
+            carInfo="{{carInfo}}"
+            isCollection="{{isCollection}}"
+            bind:collection="collection"></detail>
+    <picture isHide="{{pictureHide}}"
+             imgList="{{carImgList}}"></picture>
+    <parameter isHide="{{parameterHide}}"
+                params="{{params}}"></parameter>
+</view>

@@ -1,0 +1,6 @@
+{
+    "usingComponents":{
+        "navbar":"../../../components/base/navbar/navbar",
+        "answer":"../../../components/my/answer/answer"
+    }
+}

@@ -1,0 +1,35 @@
+<view class="parameter {{isHide?'none':''}}"
+      wx:for="{{params}}"
+      wx:key="{{index}}">
+    <view class="header row-between">
+        <view class="left">{{item.title}}</view>
+        <view class="right row-between">
+            <view class="l item row-between">
+                <image class="icon"
+                       src="../../../images/tl_yd_s_q.png"></image>
+                <view class="font">标配</view>
+            </view>
+            <view class="m item row-between">
+                <image class="icon"
+                       src="../../../images/tl_yd_kx_q.png"></image>
+                <view class="font">选配</view>
+            </view>
+            <view class="r item row-between">
+                <image class="icon line"
+                       src="../../../images/tl_hx_q.png"></image>
+                <view class="font">无</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="list main"
+          wx:for="{{item.list}}"
+          wx:for-item="param"
+          wx:key="{{index}}">
+        <view class="item row-between">
+            <view class="left">{{param.left}}</view>
+            <view class="right">{{param.right}}</view>
+    </view>
+    </view>
+    
+</view>

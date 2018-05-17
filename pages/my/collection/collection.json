@@ -1,0 +1,9 @@
+{
+    "usingComponents":{
+        "navbar":"../../../components/base/navbar/navbar",
+        "car":"../../../components/my/collection/car/car",
+        "article":"../../../components/my/collection/article/article",
+        "_video": "../../../components/my/collection/video/video",
+        "_audio": "../../../components/my/collection/audio/audio"
+    }
+}

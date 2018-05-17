@@ -1,0 +1,45 @@
+.container{
+    background: white;
+    position: relative;
+}
+.num{
+    position: absolute;
+    right:10rpx;
+    bottom:10rpx;
+    font-size:32rpx;
+    color:#888;
+}
+textarea{
+    border:1rpx solid #ececec;
+    border-radius: 10rpx;
+    margin:0 auto;
+    margin-top:10rpx;
+    width:690rpx;
+    box-sizing: border-box;
+    padding:20rpx;
+    font-size:34rpx;
+}
+.placeholder{
+    color:#888;
+    font-size:34rpx;
+}
+.btn{
+    margin-top:10rpx;
+    box-sizing: border-box;
+    padding:0 30rpx;
+}
+.yes{
+    background: #ff7400!important;
+}
+.no{
+    background: #fea456!important;
+}
+.red{
+    color: red;
+}
+.err{
+    color:red;
+    font-size:30rpx;
+    padding-left:30rpx;
+    margin-top:10rpx;
+}

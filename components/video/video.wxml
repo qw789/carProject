@@ -1,0 +1,52 @@
+<view class=" {{isHide?'none':''}} home-video">
+    <view class="tags row-start">
+        <view class="not-expand row-between {{isExpand?'none':''}}">
+            <view class="btn not-expand-btn {{index==currentIndex?'btn-select':''}}"
+                wx:for="{{tagList}}"
+                wx:key="{{index}}"
+                data-id="{{item.id}}"
+                bindtap="filter"
+                data-index="{{index}}">{{item.name}}</view>
+        </view>
+        <view class="all-tag {{isExpand?'':'none'}}">全部分类</view>
+        <view bindtap="isExpand"
+                  class="expand-icon">
+            <image src="../../images/icon_gd.png"
+                    animation="{{animationData}}"></image>
+        </view>
+    </view>
+
+    <view class="expand {{isExpand?'':'none'}}">
+        <view class="btn expand-btn {{index==currentIndex?'btn-select':''}}"
+                wx:for="{{tagsList}}"
+                wx:key="{{index}}"
+                bindtap="filters"
+                data-index="{{index}}"
+                data-id="{{item.id}}">{{item.name}}</view>
+    </view>
+
+    <view class="video-item" 
+          bindtap="toDetail"
+          data-id="{{item.id}}"
+          data-type="{{item.resourceType}}"
+          wx:for="{{videoList}}"
+          wx:key="{{index}}">
+          <video src="{{item.src}}" 
+                 poster="{{item.poster}}"
+          ></video>
+          <view class="con">
+            <view class="til">{{item.title}}</view>
+            <view class="comment">
+                <view class="l">播放</view>
+                <view class="r left">{{item.views}}</view>
+                <view class="l">评论</view>
+                <view class="r right">{{item.comments}}</view>
+                <view class="time">{{item.createDate}}</view>
+            </view>
+          </view>
+    </view>
+
+    <view class="mask {{isExpand?'':'none'}}"></view>
+</view>
+
+

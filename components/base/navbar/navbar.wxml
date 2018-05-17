@@ -1,0 +1,7 @@
+    <view class="header">
+        <view class="item {{currentTab==index?'select':''}}"
+              wx:for="{{navList}}"
+              wx:key="{{index}}"
+              data-index="{{index}}"
+              bindtap="nav">{{item}}</view>
+    </view>

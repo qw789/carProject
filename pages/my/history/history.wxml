@@ -1,0 +1,30 @@
+<view class="container {{dataList.length==0?'':'bottom200'}}">
+    <view class="kong {{dataList.length==0?'':'none'}}">
+        <view class="box">
+            <image src="../../../images/kym_ll.png"></image>
+            <view>您还没有任何浏览记录</view>
+        </view>
+    </view>
+    <view class="list {{dataList.length==0?'none':''}}">
+        <view class="item row-start"
+              wx:for="{{dataList}}"
+              wx:key="{{index}}">
+            <image src="{{item.select?selectIcon:noSelectIcon}}"
+                bindtap="select"
+                data-id="{{item.id}}"
+                data-index="{{index}}"></image>
+            <view class="font">{{item.name}}</view>
+        </view>
+    </view>
+    <view class="bottom {{dataList.length==0?'none':''}}">
+        <button class="delete" type="warn"
+                hidden='{{edit?false:true}}'
+                bindtap="toDelete">删 除</button>
+        <button class="cancel"
+                hidden='{{edit?false:true}}'
+                bindtap='edit'>取 消</button>
+        <button class="edit"
+                hidden='{{edit?true:false}}'
+                bindtap="edit">编 辑</button>
+    </view>
+</view>

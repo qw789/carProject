@@ -1,0 +1,32 @@
+<import src="../../../wxParse/wxParse.wxml"/>
+
+<view class="container"
+      id="container"
+             scroll-y="true"
+             scroll-into-view="{{comments}}"
+             >
+    <view class="information"
+          id="information">
+        <view class="title">{{detail.title}}</view>
+        <view class="play row-center">
+            <view class="l">{{detail.source}}</view>
+            <view class="m">|</view>
+            <view class="mid">{{detail.author}}</view>
+            <view class="m">|</view>
+            <view class="right">{{detail.createDate}}</view>
+        </view>
+        <view class="content">
+            <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+        </view>
+    </view>
+
+    <view id="comments"></view>
+    <comment commentList="{{commentList}}"
+             comments="{{comments}}"
+             isCollection="{{isCollection}}"
+             bind:getComment="getInput"
+             bind:collection="collection"
+             bind:toShare="toShare"
+             bind:toComment="toComment"></comment> 
+    <button class="share" open-type='share'>   </button>
+</view>

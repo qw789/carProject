@@ -1,0 +1,54 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/car/car",
+        "pages/my/my",
+        "pages/home/audioDetail/audioDetail",
+        "pages/home/videoDetail/videoDetail",
+        "pages/home/informationDetail/informationDetail",
+        "pages/car/carSearch/carSearch",
+        "pages/car/carList/carList",
+        "pages/car/carDetail/carDetail",
+        "pages/my/editMy/editMy",
+        "pages/my/history/history",
+        "pages/my/collection/collection",
+        "pages/my/address/address",
+        "pages/my/answer/answer",
+        "pages/my/message/message",
+        "pages/my/feedback/feedback",
+        "pages/home/bindPhone/bindPhone",
+        "pages/home/comment/comment",
+        "pages/my/answer/wen/wen"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "汽车立体声",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "selectedColor": "#ff7400",
+        "backgroundColor": "#fff",
+        "borderStyle": "white",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "首页",
+                "iconPath": "images/icon_tab_shy_n.png",
+                "selectedIconPath": "images/icon_tab_shy_s.png"
+            },
+            {
+                "pagePath": "pages/car/car",
+                "text": "选车",
+                "iconPath": "images/icon_tab_xch_n.png",
+                "selectedIconPath": "images/icon_tab_xch_s.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的",
+                "iconPath": "images/icon_tab_wd_n.png",
+                "selectedIconPath": "images/icon_tab_wd_s.png"
+            }
+        ]
+    }
+}

@@ -1,0 +1,43 @@
+<scroll-view class="comment">
+    <view class="title">
+    全部评论
+        <view class="inner"></view>
+    </view>
+    <view class="item"
+          wx:for="{{commentList}}"
+          wx:key="{{index}}">
+        <view class="til">
+            <view class="left">
+                <image src="{{item.profilePicture}}"></image>
+            </view>
+            <view class="right">
+                <view class="top">{{item.nickname}}</view>
+                <view class="bottom">{{item.createDate}}</view>
+            </view>
+        </view>
+        <view class="content">
+        {{item.review}}
+        </view>
+    </view>
+    <view class="{{commentList.length==0?'':'none'}} no-comment">
+        来发表些看法吧
+    </view>
+
+    <view class="fixed row-between {{isX?'x':''}}">
+        <view class="left">
+            <input placeholder="说些什么..."
+                   placeholder-class='placeholder'
+                   bindtap="getComment"
+                   disabled='true'/>
+        </view>
+        <view class="right row-between">
+            <view class="comments">{{comments}}</view>
+            <image src="../../../images/icon_xq_pl.png"
+                   bindtap="toComment"></image>
+            <image src="{{isCollection?collectionIcon:noCollectionIcon}}"
+                   bindtap="collection"></image>
+            <image src="../../../images/icon_xq_fx.png"
+                   bindtap="toShare"></image>
+        </view>
+    </view>
+</scroll-view>

@@ -1,0 +1,30 @@
+<view class="{{hide?'none':''}}">
+
+<view class="video-item" 
+        bindtap="toDetail"
+        data-index="1"
+        data-id="{{item.id}}"
+        wx:for="{{homeList}}"
+        wx:key="{{index}}">
+        <video src="{{item.src}}" 
+               poster="{{item.poster}}"
+        controls></video>
+        <view class="con">
+        <view class="til">{{item.title}}</view>
+        <view class="comment">
+            <view class="l">播放</view>
+            <view class="r left">{{item.views}}</view>
+            <view class="l">评论</view>
+            <view class="r right">{{item.comments}}</view>
+            <view class="time">{{item.createDate}}</view>
+        </view>
+        </view>
+</view>
+
+<view class="kong {{homeList.length==0?'':'none'}}">
+    <image src="../../../../images/kym_shc.png"></image>
+    <view>您还没有任何收藏</view>
+</view>
+
+</view>
+

@@ -1,0 +1,51 @@
+<import src="../../../wxParse/wxParse.wxml"/>
+
+<view class="container {{isHide?'none':''}}">
+    <view class="banner">
+        <image src="{{carInfo.logo}}"
+               mode="aspectFill"></image>
+        <view class="mask"></view>
+    </view>
+
+    <view class="title">
+        <view class="l">
+            <view class="til row-start">
+                <view class="left">{{carInfo.name}}</view>
+                 <view class="right">{{carInfo.brandName || '大众'}}</view> 
+                <!-- <image class="voice"
+                       src="{{ifTilVoice?voice:noVoice}}"
+                       bindtap="tilVoice"></image> -->
+            </view>
+            <view class="price">{{carInfo.price || '2.88-5.08万'}}</view>
+            <view class="params">
+                <view class="item">
+                    <view class="left">级别</view>
+                    <view class="right">{{carInfo.level || '中型SUV'}}</view>
+                </view>
+                <view class="item">
+                    <view class="left">油耗</view>
+                    <view class="right">{{carInfo.oilWear || '8L/100km'}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="r">
+            <view class="center">
+                <image src="{{isCollection?collectionIcon:noCollectionIcon}}"
+                       bindtap="collection"></image>
+                <view>{{isCollection?'已收藏':'收藏'}}</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="content">
+        <view class="til row-start">
+            <!-- <image class="left"
+                   src="{{ifConVoice?voice:noVoice}}"
+                   bindtap="conVoice"></image> -->
+            <view class="right">车型介绍</view>
+        </view>
+        <view class="con">
+            <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+        </view>
+    </view>
+</view>
